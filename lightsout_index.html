@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>F1 Lights Out Reaction Test</title>
+    <link rel="stylesheet" href="lightsout_styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="game-container">
+      <div class="header">
+        <p class="instructions">
+          Click anywhere to start the lights sequence. Click again when the
+          lights go out!
+        </p>
+      </div>
+      <div class="starting-lights-container">
+        <div class="starting-lights">
+          <div class="light-column">
+            <div class="light"></div>
+            <div class="light"></div>
+            <div class="light"></div>
+            <div class="light"></div>
+          </div>
+          <div class="light-column">
+            <div class="light"></div>
+            <div class="light"></div>
+            <div class="light"></div>
+            <div class="light"></div>
+          </div>
+          <div class="light-column">
+            <div class="light"></div>
+            <div class="light"></div>
+            <div class="light"></div>
+            <div class="light"></div>
+          </div>
+          <div class="light-column">
+            <div class="light"></div>
+            <div class="light"></div>
+            <div class="light"></div>
+            <div class="light"></div>
+          </div>
+          <div class="light-column">
+            <div class="light"></div>
+            <div class="light"></div>
+            <div class="light"></div>
+            <div class="light"></div>
+          </div>
+        </div>
+      </div>
+      <div class="timer-display">
+        <div id="timer">0.000</div>
+        <div id="status-message">READY</div>
+      </div>
+      <div class="stats-container">
+        <div class="stat-box">
+          <div class="stat-label">BEST TIME</div>
+          <div class="stat-value" id="best-time">--.---</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">AVG TIME</div>
+          <div class="stat-value" id="avg-time">--.---</div>
+        </div>
+      </div>
+    </div>
+    <div id="result-popup" class="popup">
+      <div class="popup-content">
+        <h2>YOUR REACTION TIME</h2>
+        <div class="result-slogan">
+          <p>IT'S LIGHTS OUT</p>
+          <p>AND</p>
+          <p>AWAY WE GO!</p>
+        </div>
+        <div class="result-time">
+          <span id="result-value">0.000</span> seconds
+        </div>
+        <div class="result-message" id="result-message">Great start!</div>
+        <button id="try-again-btn">TRY AGAIN</button>
+      </div>
+    </div>
+    <div class="overlay"></div>
+    <script src="lightsout_app.js"></script>
+  </body>
+</html>
